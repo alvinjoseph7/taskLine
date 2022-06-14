@@ -12,7 +12,7 @@ var SCOPE = `https://www.googleapis.com/auth/classroom.courses.readonly https://
   
   function loadClient() {
 		// console.log('loadClient');
-    gapi.client.setApiKey("AIzaSyDZm8Px4yerKwaTZgcsbWR1USkkrzWkEv8");
+    gapi.client.setApiKey("API key here");
     return gapi.client.load("https://classroom.googleapis.com/$discovery/rest?version=v1")
         .then(function() { 
 			// console.log("GAPI client loaded for API"); 
@@ -68,7 +68,7 @@ var SCOPE = `https://www.googleapis.com/auth/classroom.courses.readonly https://
 	// Make sure the client is loaded and sign-in is complete before calling this method.
 gapi.load("client:auth2", function() {
 	console.log('client:auth2');
-	gapi.auth2.init({client_id: "510067352144-f15751hlrjg27gg5hkdehlv0gkmkd7o9.apps.googleusercontent.com"});
+	gapi.auth2.init({client_id: "Client ID here"});
 });
 
 
